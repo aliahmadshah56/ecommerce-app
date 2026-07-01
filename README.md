@@ -1,24 +1,20 @@
-# Online Shop 🛍️ for Hackathon Phase 1
+# Online Shop 🛍️ — Dockerized Deployment on AWS EC2
 
-[![Stars](https://img.shields.io/github/stars/iemafzalhassan/online_shop)](https://github.com/iemafzalhassan/online_shop)
-![Forks](https://img.shields.io/github/forks/iemafzalhassan/online_shop)
-![GitHub last commit](https://img.shields.io/github/last-commit/iemafzalhassan/easyshop?color=red)
-[![GitHub Profile](https://img.shields.io/badge/GitHub-iemafzalhassan-blue?logo=github&style=flat)](https://github.com/iemafzalhassan)
+[![Stars](https://img.shields.io/github/stars/aliahmadshah56/ecommerce-app)](https://github.com/aliahmadshah56/ecommerce-app)
+![Forks](https://img.shields.io/github/forks/aliahmadshah56/ecommerce-app)
+![GitHub last commit](https://img.shields.io/github/last-commit/aliahmadshah56/ecommerce-app?color=red)
+[![GitHub Profile](https://img.shields.io/badge/GitHub-aliahmadshah56-blue?logo=github&style=flat)](https://github.com/aliahmadshah56)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-<p align="center">
-
-Welcome to the **Online Shop** project – our hackathon entry for Phase 1! This repository contains a fully functional e-commerce application built to demonstrate foundational DevOps skills in three key areas:
+Welcome to the **Online Shop** project — a fully functional e-commerce application deployed end-to-end as part of my hands-on DevOps portfolio work. This repository demonstrates foundational-to-intermediate DevOps skills across three key areas:
 
 - **Git & GitHub**
 - **Linux**
 - **Docker**
 
-In this phase, your focus is on understanding the provided developer code, reviewing how these core topics are implemented, and making any necessary enhancements. When you're ready, you'll submit your work via our designated Google Form.
+The original application code and hackathon brief are from the **Train With Shubham Hackathon Phase 1**. This repo documents my own containerization and deployment work on top of it — building the Docker setup, debugging real infrastructure issues, and shipping it live on AWS EC2.
 
 ---
-
-### Project Details
 
 ### Content
 
@@ -27,89 +23,64 @@ In this phase, your focus is on understanding the provided developer code, revie
 - [**Action**](#action)
 - [**Result**](#result--resume)
 
-## Getting Started
-
-- Video Demonstration
-
-  [Video Demonstration](https://www.dropbox.com/scl/fi/06xq03rkx56hiak1080bo/videoDemo.mp4?rlkey=dje3ntpcd9zc3rzz1a1canhch&st=1vsn8k90&dl=0)
-
-1. Home Page
-![Home Page](public/homePage.png)
-1. Admin Page
-![Admin Page](public/adminPage.png)
-
 ## Guidelines & Resources
 
-Before diving into the tasks, please review the following key resources:
-
 - [CONTRIBUTING.md](CONTRIBUTING.md): Guidelines for code contributions, commit messages, and overall coding standards.
-- [COMMANDS.md](): Command used by me throught the project from Configuration to Deployment. `Except Git Commands`
-- [ROADMAP.md](ROADMAP.md): Insights into the project vision, future enhancements, and milestones.
-- **Repository Documentation:** Explore the repository to understand how the application is built. Pay special attention to the `src` directory where the main application logic resides, as well as configuration files such as `vite.config.js` and styling in `index.css`.
-
-These documents provide the context needed to understand the project requirements and the best practices expected for your contributions.
+- [COMMANDS.md](COMMANDS.md): Commands used throughout the project, from configuration to deployment (excluding Git commands).
+- [ROADMAP.md](ROADMAP.md): Project vision, future enhancements, and milestones.
+- **Repository Documentation:** See the `src` directory for application logic, and configuration files such as `vite.config.js` and `index.css`.
 
 ---
 
 ### Situation
 
-As part of the **Train With Shubham Hackathon Phase 1**, I was given the charge of deploying an Online Shopping Portal to the internet. The main goal was to ensure that the website was easily accessible, reliable, and scalable so that it could handle user traffic efficiently. Achiving this using DevOps automation tools to develop the deployment process, reducing manual effort, and improving overall system performance. Involved setting up the necessary infrastructure, automating deployments, and ensuring the application could run smoothly in a real time.
+As part of the **Train With Shubham Hackathon Phase 1**, I took on deploying an Online Shopping Portal to the internet. The goal was to make the application easily accessible, reliable, and scalable enough to handle real user traffic — using DevOps automation tools to streamline the deployment process, reduce manual effort, and improve overall system performance. This involved setting up the necessary infrastructure, automating the deployment, and ensuring the application could run smoothly in a real environment.
 
 ---
 
 ### Task
 
-- Develop the Required Infrastructre for Online Shopping Portal
-- Clonning Necessary Code and Artifacts ensurig Secrutiy and Accessbility
-- Strategize a `Deployment Plan` for brining the Applicaion to the Internet.
+- Develop the required infrastructure for the Online Shopping Portal
+- Clone and configure the codebase while ensuring security and accessibility
+- Strategize a `Deployment Plan` for bringing the application to the internet
 
-All this while ensuring:
+All while ensuring:
 
-- Gathering Necessary Resource for building the project.
-- Implementing Automation Scripts.
-- Using tools like `Docker` to build real world application.
-- Grasp a good Hands-On on DevOps tools.
-- Helping and Learning through Community!
-- Strong Cloud and DevOps Infrastructure.
-
-> Note: Remembering the Requirements
+- Gathering the resources needed to build the project
+- Implementing automation where possible
+- Using `Docker` to containerize a real-world application
+- Getting genuine hands-on experience with DevOps tools
+- Debugging infrastructure issues methodically rather than guessing
+- Building on a solid cloud/DevOps foundation
 
 ---
 
 ### Action
 
-> I did this...
+> What I actually did:
 
-- Understood the [ROADMAP.md](ROADMAP.md) and [CONTRIBUTING.md](CONTRIBUTING.md) for build up the project.
-- Gathering the resources needed to fulfill the [`Task`](#task).
-- Build a [`Docker Installation Script`](docker_installation.sh) automation script for installing and using Docker.
-  > Running Script explained in [`COMMANDS.md File`]()!
-- Setting up this Git Repository and Adding and Commiting Files
-- Build a Dockerfile for the Online Shopping Portal Application
-- Implemented Multi-Stage Docker Build which reduced the size of Image by `1GB` and increased deployment speed by `50%` improving efficiency and faster deployment
-- Build a [`.dockerignore`](.dockerignore) file for ignoring the `Files and Directory` which are unecessary.
-- Using .dockerignore help reduce the docker image size and improving its deployment speed.
-- Built a `Docker Compose` file
-- - Lead to faster implementation of Application
-- - Performing Regular `Health Checks`.
-- - Custom Network Configuration
-- Implemented `Docker Scout` for Checking `Vulnerabilties` of Application. [`Docker Scout Report`](image_report.md)
-- Used `Amazon EC2` to bring the Application to Internet
-
-> Shown in Video Demonstration
+- Reviewed the project's [ROADMAP.md](ROADMAP.md) and [CONTRIBUTING.md](CONTRIBUTING.md) to understand the codebase and standards
+- Set up SSH access to an AWS EC2 (Ubuntu) instance and connected via MobaXterm, resolving `.pem` key permission issues specific to NTFS/WSL environments
+- Reviewed and used the project's Dockerfile — a **multi-stage build** (`node:20-alpine` for building, `nginx:alpine` for serving) — which keeps the final production image lean by shipping only the compiled static assets, not the Node.js toolchain or source code
+- Configured and ran the app via **Docker Compose**, including:
+  - Diagnosing and fixing a host↔container **port mapping mismatch** (Compose was mapping `5173`, while the Nginx container actually listens on port `80`)
+  - Fixing the **health check**, switching from `curl` (not available in `nginx:alpine` by default) to `wget --spider`, pointed at the app's dedicated `/health` endpoint
+  - Installing the `docker compose` CLI plugin manually on the EC2 instance after discovering it wasn't available via the default `apt` repository
+- Verified the custom `nginx.conf`, which handles SPA routing (`try_files` fallback), gzip compression, and static asset caching
+- Configured the EC2 **Security Group** to allow inbound HTTP traffic on port 80
+- Set up **SSH-based GitHub authentication** on the EC2 instance (instead of Personal Access Tokens, which are prone to revocation) and pushed the working project to this repository
+- Deployed and verified the application was reachable via the EC2 instance's public IP
 
 ---
 
 ### Result / Resume
 
-- Successfully deployed the `Online Shopping Portal` on the internet using DevOps automation tools.
-- Improved `deployment speed by 50% `and reduced `Docker image size by 1GB` using multi-stage builds.
-- Ensured security and efficiency by implementing `Docker Scout` for `vulnerability analysis`.
-- Automated the setup process with `Docker Installation Scripts` and `Docker Compose` for easy deployment.
-- Deployed the application on `Amazon EC2`, making it accessible and scalable for real users.
+- Successfully deployed the `Online Shopping Portal` to the internet on `Amazon EC2`, making it accessible to real users
+- Debugged and resolved real infrastructure issues: port mapping mismatches, missing `docker compose` plugin, healthcheck tool incompatibility with a minimal Alpine image
+- Used a **multi-stage Docker build** to keep the production image minimal — excluding the Node.js build environment and source code from the final image
+- Configured Docker Compose with health checks, a custom bridge network, and a restart policy for resilience
+- Set up secure, token-free GitHub authentication via SSH keys directly from the deployment server
 
 ---
-
-Good luck for the hackathon
 
 Happy Learning :)
